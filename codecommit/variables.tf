@@ -1,3 +1,9 @@
+variable "profile" {
+}
+
+variable "region" {
+}
+
 variable "repository_name" {
   description = "The name for the repository. This needs to be less than 100 characters."
   type        = string
