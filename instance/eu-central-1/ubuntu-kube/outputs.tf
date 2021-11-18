@@ -5,7 +5,3 @@ output "instance_id" {
 output "public_ip" {
   value = aws_instance.instance.*.public_ip
 }
-
-output "name" {
-  value = "${var.name}-${count.index}"
-}
