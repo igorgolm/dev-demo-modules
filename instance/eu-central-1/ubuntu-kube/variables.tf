@@ -15,7 +15,7 @@ variable "key_name" {
 }
 
 variable "ami" {
-  default = "ami-01e36b7901e884a10"
+  default = "ami-0a49b025fffbbdac6"
 }
 
 variable "monitoring" {
@@ -35,7 +35,7 @@ variable "disk_termination" {
 }
 
 variable "volume_type" {
-  default = "gp2"
+  default = "ebs"
 }
 
 variable "availability_zone" {
@@ -43,7 +43,7 @@ variable "availability_zone" {
 }
 
 variable "api_termination" {
-  default = "true"
+  default = "false"
 }
 
 variable "name" {
@@ -63,7 +63,7 @@ variable "root_vsize" {
 }
 
 variable "number" {
-  default = 1
+  default = 3
 }
 
 variable "interface_enabled" {
