@@ -7,5 +7,5 @@ output "public_ip" {
 }
 
 output "name" {
-  value = var.number == 1 ? var.name : format(var.name, 2)
+  value = "${var.name}-${count.index}"
 }
