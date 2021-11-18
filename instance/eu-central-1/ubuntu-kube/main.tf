@@ -16,11 +16,11 @@ resource "aws_instance" "instance" {
   disable_api_termination     = var.api_termination
   count                       = var.number
   tags = {
-    Name = var.number == 1 ? var.name : format(var.name, count.index + 1)
+    Name = "${var.name}-${count.index}"
   }
 
   volume_tags = {
-    Name = var.number == 1 ? var.name : format(var.name, count.index + 1)
+    Name = "${var.name}-${count.index}"
   }
   root_block_device {
     volume_size           = var.root_vsize
