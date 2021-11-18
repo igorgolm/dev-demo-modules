@@ -35,7 +35,7 @@ variable "disk_termination" {
 }
 
 variable "volume_type" {
-  default = "ebs"
+  default = "gp2"
 }
 
 variable "availability_zone" {
